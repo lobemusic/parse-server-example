@@ -57,8 +57,14 @@ Parse.Cloud.define("signIn", function(request, response) {
       }
 });
 
+Parse.Cloud.define("helloInModule", function(request, response) {
+  console.log("I live in helloInModule");
+  response.success("Hello world! from module");
+});
+
 Parse.Cloud.define("signUp", function(request, response) {
 
+      console.log("I live in signUp");
       var username = request.params.username
       var first_name = request.params.first_name
       var last_name = request.params.last_name
