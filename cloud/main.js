@@ -18,6 +18,7 @@ var flagContentModule = require('./modules/flag_content_module.js');
 var spotifyModule = require('./modules/spotify_module.js');
 // var spotifySwapModule = require('cloud/modules/spotify_swap_service_module.js');
 var lobeSnapsModule = require('./modules/lobe_snaps_module.js');
+var lobeSnapsModule = require('./modules/recovery_module.js');
 
 
 // Use Parse.Cloud.define to define as many cloud functions as you want.
