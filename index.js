@@ -10,7 +10,7 @@ var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI || 'mongod
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
-var SERVER_URL = process.env.SERVER_URL || 'http://localhost:1337/parse';
+var SERVER_URL = "https://lobe-music-parse-server.herokuapp.com/parse"; // process.env.SERVER_URL || 'http://localhost:1337/parse';
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
